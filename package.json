@@ -1,0 +1,34 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "a basic url shortner website [![Run on Repl.it](https://repl.it/badge/github/reaper6947/url-shortner)](https://repl.it/github/reaper6947/url-shortner)",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "joi": "^17.1.1",
+    "mongoose": "^5.9.26",
+    "nanoid": "^3.1.12",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reaper6947/url-shortner.git"
+  },
+  "author": "reaper6947",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reaper6947/url-shortner/issues"
+  },
+  "homepage": "https://github.com/reaper6947/url-shortner#readme"
+}
