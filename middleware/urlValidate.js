@@ -6,13 +6,13 @@ const urlValidate = async (req, res, next) => {
   });
 
   try {
-    const { err, value } = await urlSchema.validateAsync(req.body);
-    if (error == undefined) {
+    
+    const { error, value } = await urlSchema.validateAsync(req.body);
+    if (error === undefined) {
       next();
     }
   } catch (err) {
-    console.log(err.details[0].message);
-    res.render("404");
+    res.render("index", { err: err.details[0].message ,id:""});
   }
 };
 
